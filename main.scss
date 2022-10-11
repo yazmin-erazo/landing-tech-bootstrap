@@ -1,0 +1,49 @@
+$primary:#515183;
+$bg-color:#170f25;
+$purple-medium:#515183;
+$purple-light:#7a37b1;
+$font-base:'Open Sans', 'Helvetica Neue', sans-serif;
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+
+  .body { 
+    position: relative;
+    font-family: $font-base;
+}
+
+  .content-main {
+    background-color: $bg-color;
+}
+
+  .suscription-bg{
+    background-color: $purple-medium;
+}
+  
+  .banner {
+  background: linear-gradient(0deg, $bg-color 10%, $purple-light 99%);
+  }
+
+/* ---------- Animation title ----------- */
+
+h1 {
+    font-family: "Courier New";
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.10em solid #FFFFFF;
+    animation: typing 4s steps(30) 1s 1 normal both, blink 1s steps(1) infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
